@@ -55,12 +55,10 @@ import '../../assets/styles/FormAlta.css'
                 clave autobus
               </label>
               <input type="text" id="clave" name="clave" className="inp" />{" "}
-              <br></br>
               <label className="cap" htmlFor="placa">
                 placa
               </label>
               <input type="text" id="placa" name="placa" className="inp" />{" "}
-              <br></br>
             </div>
             <div className="Column">
               <label className="cap" htmlFor="asientos">
@@ -72,15 +70,12 @@ import '../../assets/styles/FormAlta.css'
                 name="asientos"
                 className="inp"
               />
-              <br></br>
               <label className="cap">
                 fecha de alta
                 <input type="Date" id="fecha" name="fecha" className="inp" />
               </label>
             </div>
           </div>
-
-          <br />
           <div className="Column2">
             <label className="cap" htmlFor="tipo">
               Tipo
@@ -99,16 +94,9 @@ import '../../assets/styles/FormAlta.css'
               Nombre del chofer
               <input type="text" id="chofer" name="chofer" className="inp" />
             </label>
-            <br />
-
             <label className="cap" id="licencia">
               Número de licencia:
-              <input
-                name="licencia"
-                value={license}
-                disabled
-                className="inp"
-              ></input>
+              <input name="licencia" value={license} disabled className="inp"></input>
             </label>
           </div>
           <div className="boton">

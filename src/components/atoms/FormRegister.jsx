@@ -1,25 +1,48 @@
 /* import { Link } from "react-router-dom"; */
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import '../../assets/styles/FormRegister.css'
 import Logo from "../../assets/img/mexico-1.svg"
 
 function FormRegister() {
     const navigate = useNavigate()
-const form = useRef()
 
-    const handlerClick=(e)=>{
-        e.preventDefault();
-        const newForm = new FormData(form.current)
-        alert('Nombre: '+newForm.get('name')+'Username: '+newForm.get('username')+'Password: '+newForm.get('password'))
-    }
+
+const formDataF = useRef();
+const handlerClick = (e) => {
+  e.preventDefault();
+  const formData = new FormData(formDataF.current);
+  let URI = "http://34.225.239.102/api/registrar/usuario";
+  let options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(
+    {
+  "nombre": formData.get("name"),
+  "usuario": formData.get("username"),
+  "correo": formData.get("email"),
+  "contrasenia": formData.get("password")
+}
+    ),
+  };
+  console.log(options.body);
+  fetch(URI, options)
+    .then((response) => response.json())
+    .then((data) => {
+      alert(JSON.stringify(data));
+    });
+};
+
     return (
       <div className="formulario">
         <div className="form_Register">
           <div className="imgAlta">
             <img src={Logo} alt="Logo" height="100px" />
           </div>
-          <form action="" ref={form}>
+          <form ref={formDataF}>
             <div className="Colm">
               <div className="text">
                 <label className="caption" htmlFor="name">
@@ -34,7 +57,19 @@ const form = useRef()
                 />
               </div>
               <div className="text">
-                <label className="caption">username</label>
+                <label className="caption" htmlFor="email">
+                  E-mail
+                </label>
+                <input
+                  className="inp"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="ejem: cristian@dominio.com"
+                />
+              </div>
+              <div className="text">
+                <label className="caption">Username</label>
                 <input
                   className="inp"
                   type="text"
@@ -44,7 +79,7 @@ const form = useRef()
               </div>
               <div className="text">
                 <label className="caption" htmlFor="pass">
-                  password
+                  Password
                 </label>
                 <input
                   className="inp"
@@ -56,6 +91,7 @@ const form = useRef()
             </div>
             <div className="boton">
               <button onClick={handlerClick}>Registro</button>
+              {/* <link to="/AltaProducto">Alta autobus</link> */}
             </div>
           </form>
         </div>
