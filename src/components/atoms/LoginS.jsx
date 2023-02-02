@@ -66,7 +66,7 @@ function LoginS() {
               />
             </div>
             <div className="botonLogin">
-              <Link to="/Register">
+              <Link to="/altaproducto">
                 <button onClick={handlerClick}>Iniciar Sesion</button>
               </Link>
               <Link to="/Register">
@@ -75,7 +75,6 @@ function LoginS() {
             </div>
           </div>
         </div>
-        <a href="http://localhost:5173/altaproducto">Alta</a>
       </form>
     );
 }
