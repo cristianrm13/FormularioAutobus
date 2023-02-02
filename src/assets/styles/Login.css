@@ -1,0 +1,30 @@
+input{
+    align-items: center;
+    background-color: rgb(233, 230, 236);
+    height: 22px;
+}
+button{
+    background-color: rgb(78, 235, 78);
+}
+.form_Login{
+width: 30%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #30C565;
+    background: rgb(78, 199, 193);
+    background: -moz-linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    background: -webkit-linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    background: linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ec7c1", endColorstr="#c63fa1", GradientType=1);
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.botonLogin {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 30px;
+}

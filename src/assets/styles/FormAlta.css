@@ -1,0 +1,91 @@
+body{
+    background-color: #19704fd8;
+}
+
+.imgAlta{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background: rgb(93, 199, 78);
+        background: -moz-linear-gradient(129deg, rgba(93, 199, 78, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 17%, rgba(198, 63, 161, 0.5858718487394958) 100%);
+        background: -webkit-linear-gradient(129deg, rgba(93, 199, 78, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 17%, rgba(198, 63, 161, 0.5858718487394958) 100%);
+        background: linear-gradient(129deg, rgba(93, 199, 78, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 17%, rgba(198, 63, 161, 0.5858718487394958) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5dc74e", endColorstr="#c63fa1", GradientType=1);
+}
+.fmAlta{
+    display: flex;
+    justify-content: center;
+    flex-wrap: row;
+    margin: 1%;
+    align-items: center;
+    align-self: center;
+    background: rgb(63, 198, 147);
+        background: -moz-radial-gradient(circle, rgba(63, 198, 146, 0.315) 0%, rgba(148, 188, 233, 0.342) 100%);
+        background: -webkit-radial-gradient(circle, rgba(63, 198, 146, 0.329) 0%, rgba(148, 188, 233, 0.329) 100%);
+        background: radial-gradient(circle, rgba(63, 198, 146, 0.247) 0%, rgba(148, 188, 233, 0.11) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3fc693", endColorstr="#94bbe9", GradientType=1);
+}
+.formBus{
+    width: 30%;
+    height: auto;
+    background-color: #30C565;
+    background: rgb(78, 199, 193);
+    background: -moz-linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    background: -webkit-linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    background: linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ec7c1", endColorstr="#c63fa1", GradientType=1);  
+}
+.formPadre{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.inp{
+    display: flex;
+    justify-content: center;
+    background-color: hwb(160 69% 10% / 0.384);
+    width: 80%;
+    border: none;
+    border-radius: 4px;
+}
+.Column{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin:10px;
+    font: 1em sans-serif;
+}
+.Column2 {
+    display: flex;
+    flex-direction: column;
+    font: 1em sans-serif;
+    margin:1px;
+    padding-left: 15%;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 32px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.397);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.678);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}

@@ -1,0 +1,37 @@
+.caption{
+
+    display: flex;
+        flex-direction: column;
+        font: 1em sans-serif;
+        margin: 1px;
+        padding-left: 15%;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.form_Register{
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #30C565;
+    background: rgb(78, 199, 193);
+    background: -moz-linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    background: -webkit-linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    background: linear-gradient(53deg, rgba(78, 199, 193, 0.9051995798319328) 0%, rgba(48, 197, 101, 1) 50%, rgba(198, 63, 161, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ec7c1", endColorstr="#c63fa1", GradientType=1);
+}
+.Colm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font: 1em sans-serif;
+    margin: 10px;
+    padding-left: 1%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
